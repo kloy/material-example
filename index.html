@@ -33,15 +33,60 @@
 
 	<script type="text/javascript" src="scripts.js"></script>
 </head>
-<body>
-	<h1>Hello World</h1>
+<body
+	ng-app="app"
+	md-theme="default"
+	ng-controller="AppCtrl"
+	layout="horizontal"
+>
+	<md-sidenav
+		class="md-sidenav-left md-whiteframe-z2"
+		layout="vertical"
+		component-id="left"
+		tabindex="-1"
+	>
+
+		<md-toolbar md-theme="blue">
+			<h2 class="md-toolbar-tools">
+				<span>Menu</span>
+			</h2>
+		</md-toolbar>
+
+		<md-content class="md-padding" ng-controller="LeftCtrl">
+			<md-button ng-click="close()" class="md-primary" hide-md>
+				Close Sidenav Left
+			</md-button>
+			<p hide show-md>
+				This sidenav is locked open on your device. To go back to the default behavior, narrow your display.
+			</p>
+		</md-content>
+
+	</md-sidenav>
 
 	<div
-		class="buttondemoBasicUsage"
-		ng-app="buttonsDemo1"
-		ng-controller="AppCtrl"
-		ng-include="'buttons.ng.html'"
+		layout="vertical"
+		layout-fill
+		tabindex="-1"
+		role="main"
 	>
+
+		<md-toolbar md-theme="light-blue-dark">
+			<h2 class="md-toolbar-tools">
+				<a ng-click="toggleLeft()" href="">
+					<md-icon
+						icon="menu-alt.svg"
+						style="width: 32px; height: 32px;"
+						class="menu-icon"
+						ng-click="toggleLeft()"
+					></md-icon>
+				</a>
+				<span>Material Example</span>
+			</h2>
+		</md-toolbar>
+
+		<md-content flex class="md-padding" scroll-y flex layout-fill>
+			<md-card ng-include="'buttons.ng.html'"></md-card>
+		</md-content>
 	</div>
 </body>
 </html>
