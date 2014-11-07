@@ -1,0 +1,145 @@
+$color-netspend: (
+  '50': #fce4ec,
+  '100': #f8bbd0,
+  '200': #f48fb1,
+  '300': #f06292,
+  '400': #ec407a,
+  '500': #e91e63,
+  '600': #d81b60,
+  '700': #c2185b,
+  '800': #ad1457,
+  '900': #880e4f,
+  'A100': #ff80ab,
+  'A200': #ff4081,
+  'A400': #f50057,
+  'A700': #c51162
+);
+
+$theme-name: 'netspend';
+// $font-family: 'RobotoDraft', 'Helvetica Neue', Helvetica, Arial !default;
+// $dark-theme: false !default;
+// $foreground-color-palette: $color-grey !default;
+// $foreground-base-color: map-get($foreground-color-palette, '1000') !default;
+// $foreground-primary-color: rgba($foreground-base-color, 0.73) !default;
+// $foreground-secondary-color: rgba($foreground-base-color, 0.54) !default;
+// $foreground-tertiary-color: rgba($foreground-base-color, 0.26) !default;
+// $foreground-quarternary-color: rgba($foreground-base-color, 0.12) !default;
+// $foreground-text-shadow: none !default;
+// $input-border-color: $foreground-secondary-color !default;
+// $input-disabled-border-color: $foreground-tertiary-color !default;
+// $background-color-palette: #333;
+// $background-color-base: map-get($background-color-palette, 'A100') !default;
+$primary-color-palette: $color-netspend;
+// $warn-color-palette: $color-red !default;
+// $primary-color-palette-contrast-color: white !default;
+// $baseline-grid:            8px !default;
+// $layout-breakpoint-sm:     600px !default;
+// $layout-breakpoint-md:     960px !default;
+// $layout-breakpoint-lg:     1200px !default;
+// $layout-gutter-width:      ($baseline-grid * 2) !default;
+// $app-bar-height: 64px;
+// $toast-height: $baseline-grid * 3 !default;
+// $toast-margin: $baseline-grid * 1 !default;
+// $whiteframe-shadow-z1: 0px 2px 5px 0 rgba(0,0,0,0.26);
+// $whiteframe-zindex-z1: 1;
+// $whiteframe-shadow-z2: 0px 8px 17px rgba(0,0,0,0.2);
+// $whiteframe-zindex-z2: 2;
+// $whiteframe-shadow-z3: 0px 17px 50px rgba(0,0,0,0.19);
+// $whiteframe-zindex-z3: 3;
+// $whiteframe-shadow-z4: 0px 16px 28px 0 rgba(0,0,0,0.22);
+// $whiteframe-zindex-z4: 4;
+// $whiteframe-shadow-z5: 0px 27px 24px 0 rgba(0,0,0,0.2);
+// $whiteframe-zindex-z5: 5;
+// $z-index-dialog: 10;
+// $z-index-tooltip: 9;
+// $z-index-toast: 8;
+// $z-index-bottom-sheet: 8;
+// $z-index-sidenav: 6;
+// $z-index-backdrop: 5;
+// $z-index-fab: 2;
+// $backdrop-color: rgba(0,0,0,0.3);
+// $bottom-sheet-color-palette: $background-color-palette !default;
+// $bottom-sheet-background-color: map-get($bottom-sheet-color-palette, '50') !default;
+// $bottom-sheet-border-top-color: map-get($bottom-sheet-color-palette, '400') !default;
+// $bottom-sheet-header-color: $foreground-secondary-color !default;
+// $bottom-sheet-list-color: $foreground-secondary-color !default;
+// $button-border-radius: 3px !default;
+// $button-fab-border-radius: 50% !default;
+// $button-primary-color-palette: $color-green;
+// $button-primary-color: map-get($button-primary-color-palette, '400') !default;
+// $button-primary-raised-color: $primary-color-palette-contrast-color !default;
+// $button-primary-raised-background-color: map-get($button-primary-color-palette, '500') !default;
+// $button-primary-raised-hover-background-color: map-get($button-primary-color-palette, '600') !default;
+// $button-warn-color-palette: $warn-color-palette !default;
+// $button-warn-color: map-get($button-warn-color-palette, '400') !default;
+// $button-warn-raised-color: $primary-color-palette-contrast-color !default;
+// $button-warn-raised-background-color: map-get($button-warn-color-palette, '500') !default;
+// $button-warn-raised-hover-background-color: map-get($button-warn-color-palette, '700') !default;
+// $button-flat-color-palette: $background-color-palette !default;
+// $button-disabled-color: $foreground-tertiary-color !default;
+// $button-disabled-background-color: transparent !default;
+// $button-hover-background-color: rgba(map-get($button-flat-color-palette, '500'), 0.20) !default;
+// $button-raised-color-palette: $button-flat-color-palette !default;
+// $button-raised-background-color: rgba(map-get($button-raised-color-palette, '500'), 0.185) !default;
+// $button-raised-hover-background-color: rgba(map-get($button-raised-color-palette, '500'), 0.30) !default;
+// $card-border-radius: 2px !default;
+// $checkbox-color-palette: $color-orange;
+// $checkbox-checked-background-color: rgba(map-get($checkbox-color-palette, '400'), 0.87) !default;
+// $checkbox-checked-color: map-get($foreground-color-palette, '200') !default;
+// $checkbox-ripple-color: map-get($checkbox-color-palette, '600') !default;
+// $checkbox-checked-ripple-color: map-get($color-grey, '600') !default;
+// $checkbox-border-color: $input-border-color !default;
+// $checkbox-disabled-border-color: $input-disabled-border-color !default;
+// $content-background-color: $background-color-base !default;
+// $dialog-border-radius: 4px !default;
+// $dialog-color-palette: $background-color-palette !default;
+// $dialog-background-color: map-get($dialog-color-palette, 'A100') !default;
+// $dialog-border-color: rgba(map-get($dialog-color-palette, '1000'), 0.12) !default;
+// $divider-color: $foreground-quarternary-color !default;
+// $progress-circle-background: transparent !default;
+// $progress-circle-color: map-get($primary-color-palette, '500') !default;
+// $progress-circle-inset-color: $background-color-base !default;
+// $progress-linear-color-palette: $primary-color-palette !default;
+// $progress-linear-color: map-get($progress-linear-color-palette, '500') !default;
+// $progress-linear-alt-color: map-get($progress-linear-color-palette, '100') !default;
+// $radio-color-palette: $color-green !default;
+// $radio-on-background-color: rgba(map-get($radio-color-palette, '400'), 0.87) !default;
+// $radio-ripple-color: map-get($radio-color-palette, '600') !default;
+// $radio-off-border-color: $foreground-secondary-color !default;
+// $radio-group-focus-border-color: $foreground-primary-color !default;
+// $slider-color-palette: $primary-color-palette !default;
+// $slider-background-color: $foreground-tertiary-color !default;
+// $slider-track-color: map-get($slider-color-palette, '500') !default;
+// $slider-thumb-color: map-get($slider-color-palette, '500') !default;
+// $slider-sign-color: map-get($slider-color-palette, '500') !default;
+// $slider-sign-text-color: $primary-color-palette-contrast-color !default;
+// $slider-focus-thumb-color: $foreground-secondary-color !default;
+// $slider-focus-ring-color: $foreground-quarternary-color !default;
+// $slider-disabled-color: map-get($foreground-color-palette, '400') !default;
+// $subheader-color-palette: $primary-color-palette !default;
+// $subheader-text-color: $foreground-secondary-color !default;
+// $subheader-primary-text-color: map-get($subheader-color-palette, '500') !default;
+// $switch-color: $foreground-secondary-color !default;
+// $switch-focus-color: map-get($foreground-color-palette, '1000');
+// $tabs-color-palette: $color-green;
+// $tabs-header-background-color: map-get($tabs-color-palette, '500') !default;
+// $tabs-inactive-color: map-get($tabs-color-palette, '100') !default;
+// $tabs-active-color: $primary-color-palette-contrast-color !default;
+// $tabs-disabled-color: $foreground-quarternary-color !default;
+// $tabs-focus-color: $foreground-primary-color !default;
+// $tabs-highlight-color: #ffff85;
+// $tff-focus-color: map-get($primary-color-palette, '500') !default;
+// $tff-text-color: $foreground-primary-color !default;
+// $tff-hint-small-color: mix($foreground-secondary-color, $foreground-tertiary-color, 40%) !default;
+// $tff-hint-color: $foreground-tertiary-color !default;
+// $tff-line-color: $foreground-quarternary-color !default;
+// $tff-disabled-line-color: mix($foreground-tertiary-color, $foreground-quarternary-color) !default;
+// $tff-disabled-color: $foreground-quarternary-color !default;
+// $toast-background-color: #323232 !default;
+// $toast-text-color: white !default;
+// $toast-action-color: map-get($primary-color-palette, 'A200') !default;
+// $toolbar-background-color: map-get($primary-color-palette, '500') !default;
+// $toolbar-text-color: $primary-color-palette-contrast-color;
+// $tooltip-color: map-get($foreground-color-palette, 'A100') !default;
+// $tooltip-background-color: rgba(black, 0.52);
+

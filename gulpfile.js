@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var exec = require('exec');
+var runSequence = require('run-sequence');
+var connect = require('gulp-connect');
 
 function createExecCallback (cb) {
 
@@ -51,4 +53,23 @@ gulp.task('material-themes', ['material-setup'], function (cb) {
   );
 });
 
-gulp.task('default', ['material-themes']);
+gulp.task('themes', function (cb) {
+
+  gulp.src('themes/*').
+    pipe(gulp.dest('bower_components/angular-material-internal/themes')).
+    on('end', function () {
+
+      runSequence('material-themes', function () {
+        cb();
+      });
+    });
+});
+
+gulp.task('serve', function () {
+
+  connect.server({
+    port: 8088
+  });
+});
+
+gulp.task('default', ['themes', 'serve']);

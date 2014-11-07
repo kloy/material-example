@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="bower_components/angular-material/themes/cyan-theme.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/angular-material/themes/deep-orange-theme.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/angular-material/themes/deep-purple-theme.css">
-	<link rel="stylesheet" type="text/css" href="bower_components/angular-material/themes/default-theme.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/angular-material/themes/green-theme.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/angular-material/themes/grey-theme.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/angular-material/themes/indigo-theme.css">
@@ -23,6 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="bower_components/angular-material/themes/red-theme.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/angular-material/themes/teal-theme.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/angular-material/themes/yellow-theme.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/angular-material-internal/dist/themes/netspend-theme.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<script type="text/javascript" src="bower_components/hammerjs/hammer.js"></script>
@@ -35,7 +35,7 @@
 </head>
 <body
 	ng-app="app"
-	md-theme="default"
+	md-theme="netspend"
 	ng-controller="AppCtrl"
 	layout="horizontal"
 >
@@ -46,7 +46,7 @@
 		tabindex="-1"
 	>
 
-		<md-toolbar md-theme="blue">
+		<md-toolbar>
 			<h2 class="md-toolbar-tools">
 				<span>Menu</span>
 			</h2>
@@ -70,7 +70,7 @@
 		role="main"
 	>
 
-		<md-toolbar md-theme="light-blue-dark">
+		<md-toolbar>
 			<h2 class="md-toolbar-tools">
 				<a ng-click="toggleLeft()" href="">
 					<md-icon

@@ -16,8 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular-material": "master",
     "material-design-icons": "~1.0.0",
-    "angular-material-internal": "https://github.com/angular/material.git#master"
+    "angular-material-internal": "https://github.com/angular/material.git#~0.5.1",
+    "angular-material": "~0.5.1"
   }
 }
